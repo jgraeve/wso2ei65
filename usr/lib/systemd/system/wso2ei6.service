@@ -5,12 +5,12 @@ After=network.target
 [Service]
 User=wso2adm
 Type=forking
-PIDFile=/opt/wso2/wso2ei6/wso2carbon.pid
-Environment=CARBON_HOME=/opt/wso2/wso2ei6
+PIDFile=    
+Environment=CARBON_HOME=/usr/lib64/wso2/wso2ei/6.5.0
 Environment="JVM_MEM_OPTS=-Xms256m -Xmx1024m"
 Environment=JAVA_OPTS=
 EnvironmentFile=-/etc/sysconfig/wso2ei6
-ExecStart=/opt/wso2/wso2ei6/bin/integrator.sh --start
+ExecStart=/usr/lib64/wso2/wso2ei/6.5.0/bin/integrator.sh --start
 ExecStop=/bin/kill -s TERM $MAINPID
 PrivateTmp=false
 LimitNOFILE=65536

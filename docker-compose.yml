@@ -1,0 +1,13 @@
+version: "3"
+services:
+  wso2ei:
+    env_file:
+      - .env
+    image: wso2ei:wso2ei-6.5.0
+    build:
+      context: .
+      args:
+        WUM_EMAIL: ${WUM_EMAIL}
+        WUM_PASSWORD: ${WUM_PASSWORD}
+    ports:
+      - "9443:9443"
