@@ -9,5 +9,7 @@ services:
       args:
         WUM_EMAIL: ${WUM_EMAIL}
         WUM_PASSWORD: ${WUM_PASSWORD}
+        JAVA_HOME: ${JAVA_HOME}
+    privileged: true
     ports:
       - "9443:9443"

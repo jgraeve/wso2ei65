@@ -7,6 +7,8 @@ User=wso2adm
 Type=forking
 PIDFile=    
 Environment=CARBON_HOME=/usr/lib64/wso2/wso2ei/6.5.0
+Environment="JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-0.el7_7.x86_64/jre"
+Environment="PATH=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-0.el7_7.x86_64/jre/bin:/usr/local/sbin:/usr/local/bin:
 Environment="JVM_MEM_OPTS=-Xms256m -Xmx1024m"
 Environment=JAVA_OPTS=
 EnvironmentFile=-/etc/sysconfig/wso2ei6
